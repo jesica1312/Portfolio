@@ -41,6 +41,8 @@ img{
     width: 100%;
     background-color: #161616;
 }
+
+
 /*navbar*/
 .navbar{
     background-color:#161616;
@@ -164,9 +166,26 @@ img{
 /*acad*/
 
 .academic{
-    height: 300px;
+    height: 550px;
     background: white;
+    padding: 0px 0px;
+    margin: 0px 0px;
+
 }
+
+
+.academic .container{
+    
+
+}
+
+.acad-text .card{
+    background: #161616;
+    color: #3dcfd3;
+    padding: 0px ;
+    margin: 0px ;
+}
+
 
 .academic .grid{
     grid-template-columns: 20% 80%;
@@ -186,18 +205,19 @@ h3{
     margin: 25px 10px;
 }
 
-.acad-text .card{
-    background-color: #161616;
-    color: #3dcfd3;
-    padding: 0px ;
-    margin: 0px ;
-}
+
 
 /*languages*/
+
+.language{
+    margin: 10px 0;
+    padding: 10px 0;
+}
 .languages h2{
     text-align: center;
     color: #161616;
     font-weight: 700;
+    padding-top: 0 0;
 }
 
 .languages .flex{
@@ -205,13 +225,14 @@ h3{
 }
 
 .languages .card{
+    background-color: whitesmoke;
     text-align: center;
-    margin: 18px 10px 40px;
+    margin: 18px 15px 40px;
 }
 
 .languages .card h4{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .languages .card:hover{
@@ -219,10 +240,38 @@ h3{
 
 }
 
+/*projects*/
+
+.proj{
+    height: 600px;
+    background-color: whitesmoke;
+    color: #161616;
+}
+
+.proj .flex{
+    flex-direction: column;
+}
+
+.proj h1{
+    font-weight: 900;
+    color: #3dcfd3;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/*contact*/
+
+.contact{
+    height: 10px;
+
+}
+
 /*animations*/
 @keyframes slideInFromLeft{
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 
     100%{
@@ -242,7 +291,7 @@ h3{
 }
 @keyframes slideInFromTop{
     0% {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
     }
 
     100%{
@@ -253,7 +302,7 @@ h3{
 
 @keyframes slideInFromBottom{
     0% {
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
 
     100%{
@@ -262,9 +311,16 @@ h3{
     }
 }
 
+
+
 /*tablets*/
 @media(max-width: 768px)
 {
+    .container{
+        max-width: 720px;
+
+    }
+
     img{
         height: 100%;
     }
@@ -290,6 +346,9 @@ h3{
         margin: auto;
 
     }
+    .about{
+        height: auto;
+    }
 
     .Jesicaimg{
         justify-self: center;
@@ -301,6 +360,10 @@ h3{
         text-align: center;
         margin-top: 40px;
 
+    }
+
+    .academic{
+        height: auto;
     }
 
     .acad-text{
@@ -319,8 +382,25 @@ h3{
 }
 
 /*mobile*/
-@media(max-width: 500px)
+@media(max-width: 576px)
 {
+    .container{
+        max-width: 540px;
+
+    }
+
+    img{
+        height: 100%;
+    }
+    .grid,
+    .showcase .grid,
+    .about .grid,
+    .academic .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
     .navbar{
         height: 100px;
     }
@@ -334,4 +414,60 @@ h3{
         background-color: rgba(0,0,0,0.1);
     }
 
+    .about{
+        height: auto;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 92% 96%, 0 100%);
+        
+    }
+
+
+    .Jesicaimg{
+        justify-self: center;
+        margin-bottom: 5px;
+
+
+    }
+    .about-text{
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    .academic{
+        height: auto;
+
+    }
+
+    .acad-text{
+        text-align: center;
+        margin-top: 40px;
+
+
+    }
+
+    .acad-img{
+        text-align: center;
+        margin-top: 40px;
+
+
+    }
+
+    
+
+}
+
+@media(max-width: 992px)
+{
+    .container{
+        max-width: 960px;
+
+    }
+}
+
+@media(max-width: 1200px)
+{
+    .container{
+        max-width: 1152px;
+
+    }
 }

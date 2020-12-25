@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+.card-diff {
+    background-color:whitesmoke;
+    color:#161616;
+
+}
+
+
+
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -29,6 +37,12 @@
     background: transparent;
     color: #3dcfd3;
     border-color: #3dcfd3;
+}
+
+.btn-second{
+    padding: 5px 10px;
+    margin-top: 15px;
+    
 }
 
 .btn:hover{
