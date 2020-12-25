@@ -3,32 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center">
-            <div class="left flex">
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Blog</a>
-
-                </div>
-
-            </div>
-            <div class="right">
-                <button>
-                    Contact
-                </button>
-
-            </div>
-        </nav>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">JP</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#acad">Academic</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    </header>
+
+    <!--showcase-->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>I'm Jesica 
+                    Patel</h1>
+                <p>
+                    Hi I’m a front-end web developer. I love being minimal 
+                    and creative.Do you wanna know about me more? 
+                    <span>Click on View Profile</span>
+                    
+                </p>
+                <a href="#about" class="btn btn-primary">View Profile</a>
+
+            </div>
+            <div class="container">
+                <img  class="showcase-img"src="images/imgfinal1.jpg" alt="Front-End Developer">
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="about">
+        <div class="container grid">
+        <div class="container">
+            <img class="Jesicaimg" src="images/jesicaimg.jpeg" alt="">
+        </div>
+        <div class="about-text ">
+            <h1>About Me</h1>
+            <p>
+                {
+                    ........
+                    ............
+                    some details
+                    fhdkhfddfijffjeufhafhkaef
+                    #hhbfheffeharrguhfjafaehfajbfgaghadjgnaef
+                    eefekgejeuhrierer
+                    jeueriehgehiejroer
+                    eoehgeuhiehgyehrehggjdbjhrtjiitguhtghgbshjbgjghsgsgr
+                    jshgisjrgrghgugmnbfsdkkgkgwuehrjbghdbg
+
+                }
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!--academic-->
+    <section id="acad" class="academic">
+        <div class="container grid">
+            <div class="container">
+                <img class="acad-img" src="images/daiict.png" alt="">
+            </div>
+            <div class="acad-text card">
+                <h1>Dhirubhai Ambani Institute of Information and Communication Tchnology</h1>
+                <h3>B.Tech(ICT)</h3>
+                <p> I have studied cources like Data Structure, Operating System, Algoritms, DBMS, WDM, SEN etc..</p>
+            </div>
+        </div>
+        <div class="languages">
+            <h2>Skills</h2>
+            <div class="container flex">
+                <div class=" container card">
+                    <h4>CPP</h4>
+                    <img src="images/cpp.png" alt="">
+                </div>
+                <div class="container card">
+                    <h4>DSA</h4>
+                    <img src="images/ds.png" alt="">
+                </div>
+                <div class="container card">
+                    <h4>HTML</h4>
+                    <img src="images/html.png" alt="">
+                </div>
+                <div class="container card">
+                    <h4>CSS</h4>
+                    <img src="images/cssf.png" alt="">
+                </div>
+                <div class="container card">
+                    <h4>JS</h4>
+                    <img src="images/js.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    
 </body>
 </html>
